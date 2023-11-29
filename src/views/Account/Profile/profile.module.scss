@@ -1,0 +1,77 @@
+.container {
+ @apply text-gray-900 items-center mt-5;
+}
+
+.content {
+ @apply flex flex-row space-x-8;
+}
+
+.menu {
+ @apply flex flex-col;
+}
+
+.view {
+ @apply m-0 flex-col;
+}
+
+.separator {
+ @apply flex space-x-4 mt-4; 
+}
+
+.profile {
+ @apply flex flex-col bg-white p-2 space-y-2 p-[16px] w-[288px] h-[182px];
+}
+
+.address {
+ @apply flex flex-row bg-white p-[16px] h-[182px] space-x-4;
+
+ .ship {
+  @apply flex flex-col w-[312px];
+ }
+
+ .shipping {
+  @apply flex flex-col border-0 border-r-2 border-solid border-r-gray-200;
+ }
+
+ .billing {
+  @apply flex flex-col;
+ }
+
+ .smallText {
+  @apply text-[12px];
+ }
+}
+
+.gray {
+ @apply text-gray-400 text-sm;
+}
+
+.spaceBottom {
+ @apply mb-2;
+}
+
+.spaceTop {
+ @apply mt-2;
+}
+
+.black {
+ @apply text-gray-900 text-sm font-semibold
+}
+
+.title {
+ @apply text-lg font-bold text-gray-900;
+}
+
+.myOrder {
+ @apply mt-4 mb-20 bg-white pt-3;
+
+ .orderLabel {
+  @apply text-lg text-gray-900 m-2;
+ }
+}
+
+.greets {
+ @apply space-y-4;
+}
+
+
