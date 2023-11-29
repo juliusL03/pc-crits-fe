@@ -1,0 +1,11 @@
+.navHeader {
+ @apply bg-white -m-2;
+}
+
+.navWrapper {
+ @apply max-w-6xl mx-auto border border-red-400;
+}
+
+.navContent {
+ @apply flex justify-between;
+}

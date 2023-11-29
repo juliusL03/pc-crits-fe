@@ -1,0 +1,11 @@
+.logo {
+ @apply flex items-center p-4 text-[#FF5B22];
+}
+
+.logoImg {
+ @apply h-6 w-6 mr-2;
+}
+
+.logoName {
+ @apply text-gray-900 text-2xl;
+}

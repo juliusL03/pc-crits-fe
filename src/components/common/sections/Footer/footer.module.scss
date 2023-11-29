@@ -1,0 +1,11 @@
+.container {
+ @apply bg-gray-900 -m-2;
+}
+
+.navWrapper {
+ @apply max-w-6xl mx-auto;
+}
+
+.navContent {
+ @apply flex justify-around text-white;
+}
