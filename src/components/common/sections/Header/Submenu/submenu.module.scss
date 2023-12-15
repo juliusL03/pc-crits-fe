@@ -1,0 +1,19 @@
+.container {
+ @apply  bg-[#FF7C1E] -m-2;
+}
+
+.wrapper {
+ @apply max-w-6xl mx-auto mb-2 border border-red-400;
+}
+
+.content {
+ @apply flex justify-end m-2;
+}
+
+.name {
+ @apply mr-4;
+}
+
+.textBabel {
+ @apply block font-medium text-lg text-gray-900 bg-blue-700 rounded md:bg-transparent md:text-gray-900 md:p-0 md:ml-8;
+}

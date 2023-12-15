@@ -1,0 +1,23 @@
+.container {
+ @apply flex;
+}
+
+.logoImg {
+ @apply h-6 w-6 mr-2;
+}
+
+.logoName {
+ @apply text-gray-900 text-2xl;
+}
+
+.cartCount {
+ @apply relative py-2;
+}
+
+.badge {
+ @apply absolute left-4  ml-1 -mt-4;
+}
+
+.count {
+ @apply flex h-1 w-1 items-center justify-center rounded-full bg-[#FC7B32] p-3 text-xs text-white;
+}

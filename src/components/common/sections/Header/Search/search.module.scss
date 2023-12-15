@@ -1,0 +1,47 @@
+.container {
+ @apply flex items-center;
+}
+
+.wrapper {
+ @apply flex border-4 border-[#FC7B32] border-solid rounded-lg;
+}
+
+.button {
+ @apply  bg-[#FC7B32] text-white border-none p-1 px-4;
+}
+
+.content {
+ @apply flex justify-end m-2;
+}
+
+.name {
+ @apply mr-4;
+}
+
+.textBabel {
+ @apply block font-medium text-lg text-gray-900 bg-blue-700 rounded md:bg-transparent md:text-gray-900 md:p-0 md:ml-8;
+}
+
+.inputSection {
+ @apply flex flex-wrap p-1;
+}
+
+.dropdown {
+ @apply w-[150px] justify-end;
+}
+
+.text {
+ @apply w-72 border-none rounded-l-lg pl-2 outline-none;
+}
+
+.baseText {
+ @apply text-gray-400;
+}
+
+.center {
+ @apply items-center justify-center;
+}
+
+.dropdown {
+ @apply flex w-52 space-x-4;
+}

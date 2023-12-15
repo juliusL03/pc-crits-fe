@@ -1,51 +1,45 @@
-// import {Avatar, Dropdown, MenuProps, Typography} from 'antd'
-// import {useRouter} from 'next/router'
-// import {useCallback, useMemo} from 'react'
+import { UserOutlined } from '@ant-design/icons';
+import { Avatar, Space, MenuProps, Dropdown } from 'antd';
+import Link from "next/link"
+import { Fragment } from "react";
+import logout from './logout';
 
-// import {useAuth} from '@/utils/context/auth-context'
-// import useNotification, {ENotificationType} from '@/utils/hooks/useNotification'
+type props = {
+ firstName: string | undefined
+}
 
-// type TProps = {
-// 	collapsed: boolean
-// }
+const Profile: React.FC<props> = ({firstName = 'newbie'}) => {
 
-// const SidebarProfile: React.FC<TProps> = ({collapsed}) => {
-// 	const {logout: onLogout} = useAuth()
+ const {Logout, NotificationContextHolder} = logout()
 
-// 	const {NotificationContextHolder, openNotification} = useNotification()
-// 	const router = useRouter()
+ const items: MenuProps['items'] = [
+  {
+    key: '1',
+    label: (
+     <Link href={"/account/profile"}>
+       my account
+      </Link>
+    ),
+  },
+  {
+    key: '2',
+    label: (
+      <Logout />
+    ),
+  },
+ ];
 
-// 	const logout = useCallback(async () => {
-// 		onLogout()
+	return (
+ <Fragment>
+  {NotificationContextHolder}
+   <Space size={16} wrap>
+    <h3>Hi {firstName}!</h3>
+    <Dropdown menu={{ items }} placement="bottom" arrow>
+    <Avatar style={{ backgroundColor: '#87d068' }} icon={<UserOutlined />} />
+    </Dropdown>
+  </Space>
+ </Fragment>
+	)
+}
 
-// 		openNotification(ENotificationType.Success, 'Logout succeeded')
-// 		router.replace('/login')
-// 	}, [onLogout, openNotification, router])
-
-// 	const profileMenuItems: MenuProps['items'] = useMemo(() => {
-// 		return [
-// 			{
-// 				key: 'logout',
-// 				label: 'Logout',
-// 				onClick: () => logout()
-// 			}
-// 		]
-// 	}, [logout])
-
-// 	return (
-// 		<Dropdown menu={{items: profileMenuItems}} placement="top">
-// 			<div className="flex cursor-pointer">
-// 				{NotificationContextHolder}
-// 				<Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=1" />
-// 				{!collapsed && (
-// 					<div className="flex flex-col">
-// 						<Typography.Text strong>Olivia Rhye</Typography.Text>
-// 						<Typography.Text type="secondary">olivia@untitedui.com</Typography.Text>
-// 					</div>
-// 				)}
-// 			</div>
-// 		</Dropdown>
-// 	)
-// }
-
-// export default SidebarProfile
+export default Profile

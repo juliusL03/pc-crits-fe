@@ -20,8 +20,6 @@ export type TUserData = {
 	email: string
 	age: number
 	gender: string
-	address: TAddressData
-	organization: TOrganizationData
 	password: string
 	confirm_password: string
 	deleted_at: string

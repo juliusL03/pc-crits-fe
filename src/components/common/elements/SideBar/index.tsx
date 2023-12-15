@@ -6,9 +6,9 @@ const SideBar: React.FC<Props> = ({itemsMenu}) => {
  const {name, options} = itemsMenu
 return (
  <div className={clsx(styles.menu)}>
-  <a href={name.link} className={styles.title}>{name.name}</a>
+  <a key={name.name} href={name.link} className={clsx(styles.title)}>{name.name}</a>
   {options.map(item => (
-   <a href={item.link} className={clsx(styles.link)}>{item.label}</a>
+   <a key={item.label} href={item.link} className={clsx(styles.link)}>{item.label}</a>
   ))}
  </div>
 )

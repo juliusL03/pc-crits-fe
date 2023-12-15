@@ -1,14 +1,18 @@
 import MainNav from "@/components/common/layouts/MainNav"
 import { NextPage } from "next"
 import DisplayItems from "./items"
-
+import Banner from "./Banner"
+import Popular from "./Popular"
+import NewArrivals from "./NewArrivals"
 const Home: NextPage = () => {
 
 	return (
 		<MainNav>
-   <h1>Welcome PC-crits</h1>
-   <DisplayItems />
-   <DisplayItems />
+   <Banner />
+   <Popular />
+   <NewArrivals />
+   <br />
+   {/* <DisplayItems /> */}
   </MainNav>
 	)
 }

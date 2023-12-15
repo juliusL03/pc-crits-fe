@@ -6,6 +6,20 @@
  @apply max-w-6xl mx-auto border border-red-400;
 }
 
+.subWrapper {
+ @apply mx-auto bg-[#FF7C1E];
+}
+
+.subContent {
+ @apply max-w-4xl mx-auto;
+ 
+}
+
+
 .navContent {
- @apply flex justify-between;
+ @apply flex justify-center;
+}
+
+.itemContent {
+ @apply flex space-x-9;
 }

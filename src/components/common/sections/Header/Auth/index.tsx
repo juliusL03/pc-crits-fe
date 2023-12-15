@@ -1,16 +1,16 @@
 import Button from "@/components/common/elements/Button"
-import styles from './auth.module.scss'
-import { redirect } from "next/navigation"
+import {Space } from 'antd';
 import Link from "next/link"
+import { Fragment } from "react";
+
 const Auth: React.FC = () => {
- const link = () => {
-  redirect('/signup')
- }
 	return (
-  <div className={styles.auth}>
+ <Fragment>
+   <Space size={16} wrap>
     <Link href={"/signin"}><Button>Sign In</Button></Link>
     <Link href={"/signup"}><Button variant="orange">Sign up</Button></Link>
-  </div>
+  </Space>
+ </Fragment>
 	)
 }
 

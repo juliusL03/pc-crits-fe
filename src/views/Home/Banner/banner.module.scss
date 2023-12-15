@@ -1,0 +1,19 @@
+.container {
+ @apply flex flex-row w-[810px] h-[266px] bg-[#32fc54af] mt-5;
+}
+
+.text {
+ @apply ml-7;
+}
+
+.title {
+ @apply font-bold text-4xl mb-0;
+}
+
+.subtitle {
+ @apply font-medium text-xl w-[278px] mt-0;
+}
+
+.shopNow {
+ @apply border-none bg-[#FC7B32] text-white text-xl rounded-2xl px-6 py-2 hover:border-[#03133B] hover:border-solid;
+}
