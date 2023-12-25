@@ -1,5 +1,5 @@
 .container {
- @apply bg-gray-900 -m-2;
+ @apply bg-[#C9CACE] -m-2;
 }
 
 .navWrapper {
@@ -7,5 +7,9 @@
 }
 
 .navContent {
- @apply flex justify-around text-white;
+ @apply flex justify-around text-base pb-6;
+}
+
+.copyright {
+ @apply bg-white text-center font-semibold p-2 text-[16px] font-normal;
 }

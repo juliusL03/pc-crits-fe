@@ -26,6 +26,7 @@ const SignIn: NextPage = () => {
      <span>or</span>
      <Button className={clsx(styles.facebook)}>FACEBOOK</Button>
     </div>
+    <a href="/signup">register</a>
    </div>
   </MainNav>
 	)

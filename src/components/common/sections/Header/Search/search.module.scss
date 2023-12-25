@@ -1,5 +1,5 @@
 .container {
- @apply flex items-center;
+ @apply hidden md:block md:flex md:items-center;
 }
 
 .wrapper {

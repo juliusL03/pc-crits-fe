@@ -7,14 +7,14 @@ import { menuItems, menuItemsOther } from "./sideBar-items"
 import { Badge, Checkbox } from "antd"
 import MyOrder from "./order"
 
-const Display: NextPage = () => {
+const MyAccount: NextPage = () => {
 
 	return (
   <MainNav>
    <div className={clsx(styles.container)}>
     <div className={clsx(styles.content)}>
      <div className={clsx(styles.greets)}>
-      <span>Hello, Julius Legaspi</span>
+      <span>Hello, Newbie</span>
       <Badge count='Verified Account' style={{ backgroundColor: "#52c41a" }}/>
       <SideBar itemsMenu={menuItems} />
       <SideBar itemsMenu={menuItemsOther} />
@@ -24,8 +24,8 @@ const Display: NextPage = () => {
      <div className={clsx(styles.separator)}>
       <div className={clsx(styles.profile)}>
       <span className={clsx(styles.black)}>Personal Profile</span>
-      <span>Julius Legaspi</span>
-      <span>ju***************@gmail.com</span>
+      <span>Newbie Guest</span>
+      <span>Ne****@test.com</span>
       <Checkbox>Receive marketing SMS</Checkbox>
       <Checkbox>Receive marketing email</Checkbox>
       </div>
@@ -34,20 +34,20 @@ const Display: NextPage = () => {
         <span className={clsx(styles.black, styles.spaceBottom)}>Address Book</span>
         <div className={clsx(styles.ship)}>
          <span className={clsx(styles.gray)}>DEFAULT SHIPPING ADDRESS</span>
-         <span className={clsx(styles.black, styles.spaceBottom, styles.spaceTop)}>Julius Legaspi</span>
-         <span className={clsx(styles.smallText)}>R.castillo Street Alley 10 South San Juan Brgy Centro</span>
+         <span className={clsx(styles.black, styles.spaceBottom, styles.spaceTop)}>Newbie Guest</span>
+         <span className={clsx(styles.smallText)}>South San Juan Brgy Centro</span>
          <span className={clsx(styles.smallText)}>Davao Del Sur - Davao - Agdao</span>
-         <span className={clsx(styles.smallText)}>(+63) 09978225514</span>
+         <span className={clsx(styles.smallText)}>(+63) 9971234567</span>
         </div>
        </div>
        <div className={clsx(styles.billing)}>
         <br />
         <div className={clsx(styles.ship)}>
          <span className={clsx(styles.gray)}>DEFAULT BILLING ADDRESS</span>
-         <span className={clsx(styles.black, styles.spaceBottom, styles.spaceTop)}>Julius Legaspi</span>
-         <span className={clsx(styles.smallText)}>R.castillo Street Alley 10 South San Juan Brgy Centro</span>
+         <span className={clsx(styles.black, styles.spaceBottom, styles.spaceTop)}>Newbie Guest</span>
+         <span className={clsx(styles.smallText)}>South San Juan Brgy Centro</span>
          <span className={clsx(styles.smallText)}>Davao Del Sur - Davao - Agdao</span>
-         <span className={clsx(styles.smallText)}>(+63) 09978225514</span>
+         <span className={clsx(styles.smallText)}>(+63) 9971234567</span>
         </div>
        </div>
       </div>
@@ -64,4 +64,4 @@ const Display: NextPage = () => {
 	)
 }
 
-export default Display
+export default MyAccount

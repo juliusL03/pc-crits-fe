@@ -1,0 +1,44 @@
+.container {
+ @apply text-center md:w-[810px] h-full pb-10;
+}
+
+.title {
+ @apply flex justify-between;
+
+ .views {
+  @apply pt-3 text-[#FC7B32] hover:text-[#fc7c32b0] mr-2;
+ }
+}
+
+.cardWrap {
+ @apply h-full w-[190px] hover:opacity-95;
+
+ .cardImg {
+  @apply w-[190px] h-[197px] bg-white rounded-xl shadow-md hover:shadow-[#03133baf] hover:transition-all flex justify-center items-center;
+ }
+}
+
+.label {
+ @apply flex flex-col m-2 ;
+}
+
+.name {
+ @apply text-[16px] font-semibold;
+}
+
+.rate {
+ @apply text-[16px] font-semibold;
+}
+
+.price {
+ @apply text-[14px] font-semibold;
+}
+
+.context {
+ @apply flex space-x-5;
+}
+
+.viewMore {
+ @apply border-none bg-[#FC7B32] text-white text-lg rounded-md px-4 py-1 hover:bg-[#fc7c32cb];
+}
+

@@ -1,7 +1,6 @@
 import clsx from "clsx"
 import styles from './popular.module.scss'
 import Image from "next/image"
-import camera from '@/assets/image/camera.png'
 import React from "react"
 
 type props = {

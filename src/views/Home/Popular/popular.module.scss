@@ -1,12 +1,12 @@
 .container {
- @apply text-center w-full;
+ @apply text-center md:w-[810px] md:h-[266px];
 }
 
 .cardWrap {
- @apply h-[144] w-[120px];
+ @apply h-[144] w-[120px] hover:opacity-95 hover:transition-all;
 
  .cardImg {
-  @apply w-[112px] h-[122px] bg-white rounded-xl shadow-md flex justify-center items-center;
+  @apply w-[112px] h-[122px] bg-white rounded-xl shadow-md  hover:shadow-[#03133baf] hover:transition-all flex justify-center items-center;
  }
 
  .name {

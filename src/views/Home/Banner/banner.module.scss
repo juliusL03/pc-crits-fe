@@ -1,5 +1,13 @@
 .container {
- @apply flex flex-row w-[810px] h-[266px] bg-[#32fc54af] mt-5;
+ @apply flex flex-row md:w-[810px] md:h-[266px]  mt-5;
+}
+
+.lightgreen {
+ @apply bg-[#32fc54af]
+}
+
+.lightblue {
+ @apply bg-[#32d4fcaf]
 }
 
 .text {
@@ -7,13 +15,13 @@
 }
 
 .title {
- @apply font-bold text-4xl mb-0;
+ @apply font-bold md:text-4xl sm:text-xl mb-0;
 }
 
 .subtitle {
- @apply font-medium text-xl w-[278px] mt-0;
+ @apply font-medium md:text-xl sm:text-base md:w-[278px] sm:w-[140px] mt-0;
 }
 
 .shopNow {
- @apply border-none bg-[#FC7B32] text-white text-xl rounded-2xl px-6 py-2 hover:border-[#03133B] hover:border-solid;
+ @apply transition-all border-none bg-[#FC7B32] text-white md:text-xl rounded-2xl px-6 py-2 transition-all duration-75 hover:border-[#03133B] hover:border-solid;
 }

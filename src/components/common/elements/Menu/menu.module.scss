@@ -1,5 +1,5 @@
 .menu {
- @apply items-center justify-between hidden w-full md:flex md:w-auto;
+ @apply items-center justify-between w-full flex w-auto;
 }
 
 .ul {
@@ -7,11 +7,11 @@
 }
 
 .li {
- @apply block text-lg text-gray-900 bg-blue-700 rounded md:bg-transparent md:text-gray-900 md:p-0;
+ @apply block text-lg text-gray-900 sm:text-center rounded hover:text-blue-300 md:bg-transparent md:text-gray-900 md:p-0;
 }
 
 .megaButton {
- @apply flex items-center cursor-pointer justify-between w-full py-0 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0;
+ @apply flex items-center cursor-pointer justify-between w-full py-0 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 hover:bg-transparent md:border-0 hover:text-blue-600 md:p-0;
 }
 
 .megaDropDown {

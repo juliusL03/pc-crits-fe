@@ -1,10 +1,9 @@
 import clsx from 'clsx'
 import {Fragment,} from 'react'
 import HeadNavMenu from '../Menu'
-import Profile from '../Profile'
 
 import { UserOutlined } from '@ant-design/icons';
-import { Avatar, Space, MenuProps, Dropdown } from 'antd';
+import { Avatar, MenuProps, Dropdown } from 'antd';
 
 import styles from './submenu.module.scss'
 import useStore from "@/utils/store";

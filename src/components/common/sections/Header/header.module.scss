@@ -1,9 +1,13 @@
 .navHeader {
- @apply bg-white -m-2;
+ @apply bg-white w-full relative overflow-hidden;
+}
+
+.navHeight {
+ @apply sm:h-full sm:absolute md:h-auto md:relative sm:w-full sm:transition-all;
 }
 
 .navWrapper {
- @apply max-w-6xl mx-auto border border-red-400;
+ @apply md:mx-auto;
 }
 
 .subWrapper {
@@ -12,14 +16,26 @@
 
 .subContent {
  @apply max-w-4xl mx-auto;
- 
 }
+
+.hide {
+ @apply hidden;
+}
+
+.mobileMenu {
+ @apply sm:flex sm:flex-col sm:justify-center sm:items-center;
+}
+
 
 
 .navContent {
- @apply flex justify-center;
+ @apply flex relative md:justify-center sm:justify-between sm:w-full md:space-x-9;
 }
 
-.itemContent {
- @apply flex space-x-9;
+.subflex{
+ @apply hidden md:block;
+}
+
+.humberger {
+ @apply md:hidden flex cursor-pointer justify-center items-center w-12;
 }

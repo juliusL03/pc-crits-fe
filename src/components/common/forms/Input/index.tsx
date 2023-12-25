@@ -11,7 +11,7 @@ const Input: React.FC<InputProps> = forwardRef<HTMLInputElement, InputProps>(
 		{
 			type,
 			name,
-			value = '',
+			value,
 			onChange,
 			placeholder,
 			label,

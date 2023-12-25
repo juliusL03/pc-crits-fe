@@ -1,0 +1,43 @@
+.container {
+ @apply flex bg-white m-4 p-5 w-auto;
+}
+
+.paragraph {
+ @apply flex-col flex-wrap text-base w-[312px] text-sm font-medium pl-5;
+}
+
+.accomplishment {
+ @apply mt-4 flex-col; 
+}
+
+.accomplish {
+ @apply bg-[#16D229] px-2 py-2 rounded-md text-center text-[13px] font-semibold text-white;
+}
+
+.inProgress {
+ @apply bg-[#1678D2] px-16 py-2 rounded-md text-center text-[13px] font-semibold text-white;
+}
+
+.me {
+ @apply flex flex-col items-center p-5;
+}
+
+.hireme {
+ @apply bg-[#E92632] text-white text-[16px] px-14 py-2 rounded-lg border-none hover:shadow-lg hover:bg-[#e92633b9];
+}
+
+.contact {
+ @apply bg-[#ffffff] flex-col w-[229px] text-center rounded-md mt-2 shadow-lg;
+}
+
+.center {
+ @apply items-center;
+}
+
+.label {
+ @apply -mt-4 px-2;
+}
+
+.bold {
+ @apply font-medium
+}

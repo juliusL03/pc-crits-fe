@@ -1,5 +1,5 @@
 .container {
- @apply text-center w-full h-full pb-10;
+ @apply text-center md:w-[810px] md:h-full;
 }
 
 .title {
@@ -11,10 +11,10 @@
 }
 
 .cardWrap {
- @apply h-full w-[190px];
+ @apply h-full w-[190px] hover:opacity-95;
 
  .cardImg {
-  @apply w-[190px] h-[197px] bg-white rounded-xl shadow-md flex justify-center items-center;
+  @apply w-[190px] h-[197px] bg-white rounded-xl shadow-md hover:shadow-[#03133baf] hover:transition-all flex justify-center items-center;
  }
 }
 

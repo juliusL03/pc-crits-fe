@@ -1,3 +1,3 @@
-import Display from "./display";
+import MyAccount from "./account";
 
-export {Display}
+export {MyAccount}

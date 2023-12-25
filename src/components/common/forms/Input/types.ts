@@ -23,6 +23,7 @@ export type InputProps = {
 	inputWidth?: TWidth
 	prefixIcon?: string | ReactNode
 	suffixIcon?: string | ReactNode
+ value?: string
 	width?: TWidth
     onBlur?: () => void
 } & Omit<InputHTMLAttributes<HTMLInputElement>, 'size' | 'prefix'> &
